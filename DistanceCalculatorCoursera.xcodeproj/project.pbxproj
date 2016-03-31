@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A53F9597E98517A62D1DB09 /* libPods-DistanceCalculatorCoursera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61B0DF55FE899B8AE3740A /* libPods-DistanceCalculatorCoursera.a */; };
 		787819201CAB02E70084C1A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878191F1CAB02E70084C1A0 /* main.m */; };
 		787819231CAB02E70084C1A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 787819221CAB02E70084C1A0 /* AppDelegate.m */; };
 		787819261CAB02E70084C1A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787819251CAB02E70084C1A0 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05EA1C84C3447B4E2FF8FDEC /* Pods-DistanceCalculatorCoursera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculatorCoursera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DistanceCalculatorCoursera/Pods-DistanceCalculatorCoursera.debug.xcconfig"; sourceTree = "<group>"; };
+		2476AE7F122EB24A4BBF92CE /* Pods-DistanceCalculatorCoursera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculatorCoursera.release.xcconfig"; path = "Pods/Target Support Files/Pods-DistanceCalculatorCoursera/Pods-DistanceCalculatorCoursera.release.xcconfig"; sourceTree = "<group>"; };
 		7878191B1CAB02E70084C1A0 /* DistanceCalculatorCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceCalculatorCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7878191F1CAB02E70084C1A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		787819211CAB02E70084C1A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		7878192A1CAB02E70084C1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7878192D1CAB02E70084C1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7878192F1CAB02E70084C1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C61B0DF55FE899B8AE3740A /* libPods-DistanceCalculatorCoursera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DistanceCalculatorCoursera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A53F9597E98517A62D1DB09 /* libPods-DistanceCalculatorCoursera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C10587F7890DA82D2815C66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05EA1C84C3447B4E2FF8FDEC /* Pods-DistanceCalculatorCoursera.debug.xcconfig */,
+				2476AE7F122EB24A4BBF92CE /* Pods-DistanceCalculatorCoursera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		787819121CAB02E70084C1A0 = {
 			isa = PBXGroup;
 			children = (
 				7878191D1CAB02E70084C1A0 /* DistanceCalculatorCoursera */,
 				7878191C1CAB02E70084C1A0 /* Products */,
+				6C10587F7890DA82D2815C66 /* Pods */,
+				7B4A9D0F494D5599570B5533 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7B4A9D0F494D5599570B5533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C61B0DF55FE899B8AE3740A /* libPods-DistanceCalculatorCoursera.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 787819321CAB02E70084C1A0 /* Build configuration list for PBXNativeTarget "DistanceCalculatorCoursera" */;
 			buildPhases = (
+				44AF0B080A26D6629CDF6EA7 /* Check Pods Manifest.lock */,
 				787819171CAB02E70084C1A0 /* Sources */,
 				787819181CAB02E70084C1A0 /* Frameworks */,
 				787819191CAB02E70084C1A0 /* Resources */,
+				A699536D6C74A3634C3720D8 /* Embed Pods Frameworks */,
+				750CB4E01637F2E5092C9CCA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44AF0B080A26D6629CDF6EA7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		750CB4E01637F2E5092C9CCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DistanceCalculatorCoursera/Pods-DistanceCalculatorCoursera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A699536D6C74A3634C3720D8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DistanceCalculatorCoursera/Pods-DistanceCalculatorCoursera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		787819171CAB02E70084C1A0 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		787819331CAB02E70084C1A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05EA1C84C3447B4E2FF8FDEC /* Pods-DistanceCalculatorCoursera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DistanceCalculatorCoursera/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		787819341CAB02E70084C1A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2476AE7F122EB24A4BBF92CE /* Pods-DistanceCalculatorCoursera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DistanceCalculatorCoursera/Info.plist;
@@ -300,6 +377,7 @@
 				787819341CAB02E70084C1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
